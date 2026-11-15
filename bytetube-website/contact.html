@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>ByteTube | Contact</title>
+ <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+ <header class="navbar">
+ <div class="nav-left">
+ <button class="menu-btn" id="menu-toggle">☰</button>
+ <a href="index.html" class="logo">
+ <span class="logo-box">▶</span>
+ <span class="logo-text">ByteTube</span>
+ </a>
+ </div>
+ <button id="theme-toggle" class="btn-theme">
+ Dark Mode</button>
+ </header>
+ <div class="app-layout">
+ <aside class="sidebar" id="sidebar">
+ <div class="sidebar-section">
+ <a href="index.html">
+
+ Home</a>
+ <a href="services.html">
+
+ Products & Services</a>
+ </div>
+ <div class="sidebar-section">
+ <h4>Corporate Info</h4>
+ <a href="about.html">
+
+ About ByteTube</a>
+ <a href="contact.html" class="active">
+
+ Contact Support</a>
+ </div>
+ </aside>
+ <main class="main-content">
+ <div class="page-container">
+ <h1 class="page-title">Contact Us</h1>
+ <p style="color: var(--text-muted);">Get in touch with our team for support or
+corporate inquiries. Project Done by Samuel Wole-Adanlawo</p>
+ <p style="margin-top: 0.5rem;"><strong>Email:</strong> swole142@gmail.com |
+<strong>Phone:</strong> +234 706 581 8827</p>
+ <!-- Contact Form with JS Validation -->
+ <form id="contact-form" class="contact-form" novalidate>
+ <div class="form-group">
+ <label for="fullname">Full Name</label>
+ <input type="text" id="fullname" name="fullname" placeholder="John Doe">
+ <small class="error-msg" id="name-error"></small>
+ </div>
+ <div class="form-group">
+ <label for="email">Email Address</label>
+ <input type="email" id="email" name="email" placeholder="john@example.com">
+ <small class="error-msg" id="email-error"></small>
+ </div>
+ <div class="form-group">
+ <label for="subject">Subject</label>
+ <input type="text" id="subject" name="subject" placeholder="Inquiry">
+ <small class="error-msg" id="subject-error"></small>
+ </div>
+ <div class="form-group">
+ <label for="message">Message</label>
+ <textarea id="message" name="message" rows="4" placeholder="Write your
+message..."></textarea>
+ <small class="error-msg" id="message-error"></small>
+ </div>
+ <button type="submit" class="btn-primary">Send Message</button>
+ </form>
+ <div id="form-feedback" class="feedback-box hidden"></div>
+ </div>
+ </main>
+ </div>
+ <script src="main.js"></script>
+</body>
+</html>
